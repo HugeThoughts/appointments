@@ -1,8 +1,8 @@
 <div class="container">
 
     <div class="row">
-        <div class="col-md-6 col-md-offset-4 ">
-            <h3 style="margin-top:50%;">Choose Date &amp; Time (IST)</h3>
+        <div class="col-md-4 col-md-offset-4">
+            <h3 >Choose Date &amp; Time (IST)</h3>
 
             <div id="datepicker"></div>
 
@@ -12,12 +12,14 @@
 </div>
 
 <script>
+
     // Reference https://eternicode.github.io/bootstrap-datepicker/
 
     $('#datepicker').datepicker({
-
-        daysOfWeekDisabled: "0,6",
+    	format: "dd/mm/yyyy",
+	    todayHighlight: true,
         weekStart: 1,
+        daysOfWeekDisabled: "0,6"
 
 
     });
